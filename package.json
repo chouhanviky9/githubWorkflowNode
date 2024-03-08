@@ -1,0 +1,25 @@
+{
+  "name": "githubworkflownode",
+  "version": "1.0.0",
+  "description": "i am trying to implement complete ci-cd pipeline using github workflow in production environment",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'No build step required'",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chouhanviky9/githubWorkflowNode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chouhanviky9/githubWorkflowNode/issues"
+  },
+  "homepage": "https://github.com/chouhanviky9/githubWorkflowNode#readme",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
