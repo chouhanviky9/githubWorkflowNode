@@ -32,6 +32,10 @@ jobs:
       - name: Push Docker image to ECR
         run: docker push  331717872891.dkr.ecr.us-east-1.amazonaws.com/githubworkflownode:latest
       
+      - name: Deploy to Kubernetes
+        run: |
+          kubectl apply -f deployment.yaml
+          
       - name: Log out of Amazon ECR
         if: always()
         run: docker logout ${{ steps.login-ecr.outputs.registry }}
