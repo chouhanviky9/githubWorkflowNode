@@ -1,4 +1,4 @@
-name: ci
+name: ci-cd learning
 
 on:
   push:
@@ -17,6 +17,7 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
         with:
+          mask-password: true
           aws-access-key-id: ${{ secrets.AWS_ACCESS_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET }}
           region: us-east-1
