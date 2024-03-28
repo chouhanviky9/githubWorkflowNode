@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myapp-container
-        image: myapp:latest  # Docker image to use for the pods
+        image: 331717872891.dkr.ecr.us-east-1.amazonaws.com/githubworkflownode:latest  # Docker image to use for the pods
         ports:
-        - containerPort: 8080  # Port to expose on the container
+        - containerPort: 3000  # Port to expose on the container
